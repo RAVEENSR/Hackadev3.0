@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mendex.dmapp.AddResourceOwner">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:text="Owner's Information /  අයිතිකරුගේ තොරතුරු /  ஓனர்ஸ் தகவல்கள்"
+        android:textAppearance="@android:style/TextAppearance"
+        tools:layout_editor_absoluteX="16dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="Owner Type / හිමිකරු /  உரிமையாளர்"
+        android:textAppearance="@android:style/TextAppearance"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/ownerspinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Owner's Name /  අයිතිකරුගේ නම / ஓனர்ஸ் பெயர் "
+        android:textAppearance="@android:style/TextAppearance"
+        android:layout_below="@+id/ownerspinner"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/DriveName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Mobile No. / ජංගම දූරකථන අංකය / மொபைல் எண் "
+        android:textAppearance="@android:style/TextAppearance"
+        android:layout_below="@+id/DriveName"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/OwnerMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnOwner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:onClick="lastStep"
+        android:text="Next"
+        android:textColor="@color/primary"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="17dp"
+        android:text="NIC "
+        android:textAppearance="@android:style/TextAppearance"
+        android:layout_below="@+id/OwnerMobile"
+        android:layout_alignStart="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView26"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>

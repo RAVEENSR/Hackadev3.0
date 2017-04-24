@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/m"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mendex.dmapp.HomeForGov">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/user"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView8"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="26dp"
+        android:text="Requests to be Approved / අනුමත කළ යුතු ඉල්ලීම්"
+        android:textAppearance="@android:style/TextAppearance" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="961812550V, Health, *Comment*"
+        android:layout_below="@+id/textView28"
+        android:layout_alignStart="@+id/radioButton5" />
+
+    <RadioButton
+        android:id="@+id/radioButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="941612440V, Mechanic, *Comments*"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignStart="@+id/button2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Approve"
+        android:background="@drawable/buttons"
+        android:layout_below="@+id/radioButton5"
+        android:layout_alignStart="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="கோரிக்கைகள் அங்கீகரிக்கப்பட்ட வேண்டும்"
+        android:textAppearance="@android:style/TextAppearance"
+        android:layout_below="@+id/textView27"
+        android:layout_alignStart="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="70dp"
+        android:textAppearance="@android:style/TextAppearance" />
+
+</RelativeLayout>
